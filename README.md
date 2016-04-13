@@ -1,4 +1,4 @@
-Welcome the UCLA Rocket Project Webpage!
+Welcome the UCLA Rocket Project Webpage! You can find the website using the following link: uclarocketproject.github.io
 
 This is a work in progress. Please be patient. Read more about the template we are using below.
 
