@@ -41,14 +41,10 @@ body {
 }
 
 .footer-distributed .footer-left p{
+	text-align:center;
 	color:  #8f9296;
 	font-size: 14px;
 	margin: 0;
-}
-
-.footer-distributed .footer-right p{
-	float:right;
-	margin-top: 6px;
 }
 
 /* Footer links */
