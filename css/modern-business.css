@@ -46,8 +46,7 @@ body {
 	margin: 0;
 }
 
-.footer-distributed .footer-right{
-	text-align:center;
+.footer-distributed .footer-right p{
 	float:right;
 	margin-top: 6px;
 }
