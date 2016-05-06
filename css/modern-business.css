@@ -47,6 +47,7 @@ body {
 }
 
 .footer-distributed .footer-right{
+	text-align:center;
 	float:right;
 	margin-top: 6px;
 }
