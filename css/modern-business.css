@@ -48,6 +48,15 @@ body {
 
 /* Footer links */
 
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+
 
 .footer-distributed .footer-right{
 	float:right;
