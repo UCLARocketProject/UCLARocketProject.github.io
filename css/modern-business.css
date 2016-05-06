@@ -46,6 +46,11 @@ body {
 	margin: 0;
 }
 
+.footer-distributed .footer-right{
+	float:right;
+	margin-top: 6px;
+}
+
 /* Footer links */
 
 .footer-distributed p.footer-links{
@@ -63,11 +68,6 @@ body {
 	color:  inherit;
 }
 
-
-.footer-distributed .footer-right{
-	float:right;
-	margin-top: 6px;
-}
 
 
 
