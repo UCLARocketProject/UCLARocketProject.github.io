@@ -56,6 +56,12 @@ body {
 	padding: 0;
 }
 
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
 
 
 .footer-distributed .footer-right{
