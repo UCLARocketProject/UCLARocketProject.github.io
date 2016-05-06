@@ -65,9 +65,8 @@ body {
 
 
 .footer-distributed .footer-right{
-	float:right;
-	margin-top: 6px;
-	max-width: 500px;
+	font-size: 14px;
+	margin: 6px;
 }
 
 
