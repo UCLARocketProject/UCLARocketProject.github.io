@@ -1,6 +1,6 @@
 ## Welcome the UCLA Rocket Project Webpage! 
 
-You can find the website using the following link: uclarocketproject.github.io 
+You can find the website using the following link: <a href = http://uclarocketproject.github.io /> uclarocketproject.github.io </a>
 This is a work in progress. Please be patient. 
 
 ## General Information For Website Editing
