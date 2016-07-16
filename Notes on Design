@@ -1,13 +1,4 @@
-Navigation Layout:
 
-Title       /about/subteams/blog/wiki/faq/contact
-
-wiki - links directly to documentation page
-subteams - links to 1 column portfolio page, then to individual pages
-blog - link to blog home 1, then to individual blog post
-about - maintain
-faq- maintain
-contact - maintain
 
 .imageWrapper {
     position: relative;
