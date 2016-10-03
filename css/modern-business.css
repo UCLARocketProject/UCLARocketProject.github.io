@@ -117,7 +117,7 @@ body {
 .intro-message {
     position: relative;
     padding-top: 5%;
-    padding-bottom: 20%;
+    padding-bottom: 30%;
 }
 
 .intro-message > h1 {
@@ -146,7 +146,7 @@ body {
     }
 
     ul.intro-social-buttons > li {
-        display: block;
+        display: inline-block;
         margin-bottom: 20px;
         padding: 0;
     }
