@@ -17,6 +17,101 @@
   <body style="padding: 30px">
     <h2 align="center">Launch Box</h2>
     <h4 align="center">The grandiose redesign of the ignition and oxidizer filling power box</h4>
-    <p>A description will be added not later than half a century from now.</p>
+    <p><b>Problem:</b> The rocket's not going anywhere without ignition! Well,
+    hopefully. We also have an issue with our <a target="_blank"
+    href="https://en.wikipedia.org/wiki/Hybrid_rocket">hybrid motor</a> which
+    works as it should meaning it needs to be filled with an oxidizer before it
+    can fly. And trust me, you don't want to be nearby when it is being filled.
+    </p>
+    <p>So how do we build a system that lets us fill and ignite a rocket from a
+    100m (300 feet) away?</p>
+    <hr align="center" />
+    <p><b>Work done so far:</b> So far we've built a completely custom system
+    of <a target="_blank"
+    href="http://www.electronics-tutorials.ws/blog/relay-switch-circuit.html">relay
+    switch circuits</a> with signals delivered over a 400 feet (130m) wires and
+    four levels of safety; common sense, key switch, general safety switch,
+    ignition safety switch. The system also allows us to toggle <a
+    target="_blank"
+    href="https://en.wikipedia.org/wiki/Solenoid_valve">solenoid valves</a> to
+    control the flow of the oxidizer from ground tanks to the rocket's oxidizer
+    tank. Here's the simplified functional graph of the current system:<br />
+    <img src="launch_box_graph.png" align="center" style="display: block;
+    margin: 0 auto" />
+    <p><b>Things to improve:</b>
+    <table style="width: 100%; border: 1px solid black">
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          Debugging
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          Currently we have to check every point in the launch box circuitry by
+          hand. It sure would be nice to have a computer do that for us!
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          Lack of digitalization 
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          Do we really want to run wires till the end of our existence.
+          Wouldn't it be nicer to have some sort of a electronic brain receive
+          our intentions by air.
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          Strict safety algorithm/analysis
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          We're not trying to do our work badly, we hope no one does, buy
+          sometimes we're tired and forget about a tiny little thing...
+          Explosions are nice, but if intended.
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          Hand-soldered
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          Our launch system is hand-soldered and we couldn't be prouder of it,
+          except when we want to be rational, cause there really is no
+          hiding that we would like to have it <a target="_blank"
+          href="https://en.wikipedia.org/wiki/Printed_circuit_board">printed.</a>
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          We built it up from the ground
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          Every component in there is chosen, assembled and made working by us.
+          Wouldn't it be more efficient to use commercial sub-circuits?
+        </td>
+      </tr>
+    </table>
+    <p><b>Things we're proud of (and would like them to stay):</b>
+    <table style="width: 100%; border: 1px solid black">
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          Modularity
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          Our system is modular. Something breaks, we throw it out and have a
+          spare installed within 5 min. Big boards are good, but not when you
+          have to repair them.
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="width: 20%; border: 1px solid black;">
+          Simplicity 
+        </td>
+        <td style="width: 80%; border: 1px solid black;">
+          We wanted to use the simplest design possible. Someone once said that
+          debugging is twice as hard as designing so if you designed it
+          cleverly you're not clever enough to debug it.
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

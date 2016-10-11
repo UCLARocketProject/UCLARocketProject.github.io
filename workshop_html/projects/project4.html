@@ -18,5 +18,86 @@
     <h2 align="center">Rocket tests sensing and ground sensing</h2>
     <h4 align="center">Ways of making the world more comprehensible by
     transforming it into numbers only computers understand</h4>
-  </body>
+    <p><b>Problem:</b> We would only pretend to be engineers if we didn't, from
+    time to time obviously, no need to be over-zealous, measure something</p>
+    <p>Measuring something turns out to be much more difficult than expected
+    since the stupid nature refuses to be measured in the same units in all
+    aspects.</p>
+    <hr align="center" />
+    <p><b>What needs to be done when making measurements:</b> Invariably, any
+    measuring functional chain has to consist of:</p>
+    <p style="text-align: center"><b>Data -> Sensor -> Conversion -> Storing ->
+    Viewing</b></p>
+    <p>As the electronics team we don't much care about <b>Data</b> and the
+    <b>Sensor</b>. It is the problems of <b>Conversion</b>, <b>Storing</b> and
+    <b>Viewing</b> that occupy us the most. Let's look at them closely.
+    <hr align="center" />
+    <p><b>Conversion:</b> Sensors are usually stupid and by that I mean
+    <a target="_blank" href="http://www.diffen.com/difference/Analog_vs_Digital">analogue</a>
+    and what's worst is it usually is not between 0-3.3V. Why between
+    0-3.3V?</p>
+    <p>0-3.3V is the simplified range in which our digital devices (such as the
+    ATmega328 which is the processor for the most popular Arduinos) can convert
+    data between analogue and digital, they use embedded <a target="_blank"
+    href="https://en.wikipedia.org/wiki/Analog-to-digital_converter">ADCs</a>.
+    The problem is to get the signal from whatever it is outputted by the
+    stupid sensor and make it vary nicely between 0-3.3V.</p>
+    <p>There are more problems than just whether the stupid (we're going to use
+    <i>stupid</i> as a synonym to <i>anologue</i>) signal is between 0-3.3V.
+    Some signals are <i>the worst</i> and come in a differential form meaning
+    that we cannot be sure whether they vary from 0V to something, but we only
+    know that they vary as a <i>difference</i> between their two lines. Now, we
+    once thought that it would be easy enough to put one of those differential
+    lines to ground and be done with it. Unfortunately that's not how it
+    works<sup><a name="1_back" /><a href="#1">1</a></sup>. What we need is a
+    differential to single ended (anchord at ground at one point, e.g. 0-3.3V)
+    signal driver.</p>
+    <p>Believe us, after reading through a dozens of websites, this is <a
+    target="_blank"
+    href="http://www.ecircuitcenter.com/Circuits/adcin_diff_se/adcin_diff_se1.htm">the
+    one</a> that finally had the answer. Paired with <a target="_blank"
+    href="http://www.linear.com/designtools/software/#LTspice">LTspice</a> and
+    we have our circuit! Of course, it actually adapting it is not that
+    easy...</p>
+    <p>Oh, and by the way we have high precision rail-to-rail operational
+    amplifiers, you can thank us later.</p>
+    <hr align="center" />
+    <p><b>Storing:</b> Now we have to store the data. If you're wondering about
+    the step between converting the stupid/analogue signal to a readable range
+    of 0-3.3V and getting the data into computer memory then don't worry. It
+    literally takes 15 min, quite startling how with all these difficulty that
+    part is that easy.</p>
+    <p>Fear no more, because our "computer memory" is about 100 bytes long and
+    would run out in a second. So what do we do with all the data? We store it!
+    That can take the form of storing it on an external flash memory (OK, an SD
+    card) or communicating it to a device which has more than a 100 bytes of
+    "computer memory".</p>
+    <p>Storing on an SD card requires a library for interfacing with the flash
+    memory and has thankfully already been done. Take a look at the following
+    <a target="_blank" href="https://www.arduino.cc/en/Reference/SD">Arduino
+    library</a>.</p>
+    <p>Communicating with another device will require the knowledge of
+    communication protocols (e.g. <a target=_blank
+    href="https://learn.sparkfun.com/tutorials/serial-communication/all">UART</a>,
+    <a target="_blank"
+    href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">SPI</a>)
+    and will mostly be done by means of writing C/C++ code.</p>
+    <hr align="center" />
+    <p><b>Viewing:</b> And lastly viewing! We encourage you to take a look at
+    the <a target="main_content" href="project2.html">Visualization System</a> as this
+    will be work at some point connected with that, but for now viewing will
+    include making sure the data is human-readable at least to some degree.</p>
+    <p>We are personally interested in viewing since we never thought C/C++ and
+    artistic opportunity could be placed in the same sentence, but here we are,
+    proven wrong by life itself.
+    <br><br><br>
+    <hr align="center" />
+    <p><a name="1" /><a href="#1_back">[1]</a> Usually the sensor is already
+    tied to the same power supply (or what's more important <i>could be</i>) so
+    one of the differential lines already is at some voltage, say 4.705V (as in
+    the example of our <a target="_blank" href="https://en.wikipedia.org/wiki/Load_cell">load
+    cell</a> so tying one of the differential lines to ground would cause a
+    short between a 4.705V and ground. Not deadly, but definitely not
+    pleasant</p>
+    </body>
 </html>
