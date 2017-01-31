@@ -239,7 +239,7 @@ footer {
   color: steelblue;
 }
 
-#social, #newsletter{
+#social, #newsletter, #footer-social{
 	text-align: center;
 }
 
@@ -252,3 +252,4 @@ footer {
 .i-youtube, .i-facebook, .i-github{
 	font-size: 24px;
 }
+
