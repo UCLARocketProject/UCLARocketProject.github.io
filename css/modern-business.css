@@ -110,30 +110,35 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../images/rocket-project-1920-1080.jpg) no-repeat center center;
+    /*background: url(../images/rocket-project-1920-1080.jpg) no-repeat center center;*/
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
+	color: #f8f8f8;
+	text-align: center;
     padding-top: 5%;
     padding-bottom: 30%;
 }
 
-.intro-message > h1 {
+.intro-message > h1  {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+}
+
+.intro-message > h2 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 @media(max-width:767px) {
@@ -165,7 +170,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    height: 100%;
 }
 
 header.carousel .item,
@@ -236,7 +241,7 @@ footer {
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
   text-align: center;
-  color: steelblue;
+  color: #536895;
 }
 
 #social, #newsletter, #footer-social{
@@ -247,6 +252,26 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#almighty{
+	text-align:center;
+}
+
+#presidents{
+	text-align:center;
+}
+
+#leaders{
+	text-align:center;
+}
+
+.alum-title{
+		color: #3284BF;
+}
+
+#mcsignup{
+	background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
 }
 
 

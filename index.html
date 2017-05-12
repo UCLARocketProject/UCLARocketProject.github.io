@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -54,7 +53,7 @@
                         <a href="projects.html">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="https://rocketprojectucla.wordpress.com/">BLOG</a>
+                        <a href="newsletter.html">NEWSLETTER</a>
                     </li>
                     <li>
                         <a href="https://github.com/UCLARocketProject/Documentation/wiki">WIKI</a>
@@ -73,31 +72,71 @@
     </nav>
     
     <!-- Header -->
-    <div class="intro-header">
-        <div class="container">
+	    <header id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('images/rocket-project-1920-1080.jpg');background-color: white;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="intro-message">
+									<!--<h1>Welcome to</h1>-->
+									<h2>The Largest Student Rocket Engineering Program at UCLA</h2>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/rnd-rail.jpg');background-color: white;"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/tin-can-group.jpg');background-color: white;"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+ <!--   <div class="intro-header">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
 						<h1>Welcome to</h1>
-                        <h3>The Largest Student Rocket Engineering Program at UCLA</h3>
-                        <!--<hr class="intro-divider">-->
-                        
-						
+                        <h3>The Largest Student Rocket Engineering Program at UCLA</h3>						
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
     <!-- /.intro-header -->
-    
 
     <!-- Page Content -->
     <div class="container">
-       	    
         <!-- Recent News and Events Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -106,21 +145,24 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <a href = "https://rocketprojectucla.wordpress.com/2016/08/31/irec-2016-competition-ucla-wins-innovation-award/">
-					<img class="img-responsive" src="images/blog-posts-content/irec2016ucla-small.jpg" alt="Rocket Project presenting their work in Green River.">
+                <a href = "images/projects/2017-lre/lre-initial-cad.png">
+					<img class="img-responsive" src="images/projects/2017-lre/lre-initial-cad.png" alt="The beginning of our Liquid Rocket Effort">
 				</a>
+				<h5>A view of our RP-1 Nitrous Oxide Liquid Bi-Propellant Engine.</h5>
             </div>
             <div class="col-md-6">
                 <h3>
-                    IREC 2016 Competition - UCLA WINS INNOVATION AWARD
+                    Special Thanks: Foster and Coco Stanback
                 </h3>
-                <h5>August 31, 2016</h5>
-                <p>Thank you to all of our advisors, alumni, and sponsors who have helped us reach further than we could have without you. You really do make a big difference, and the energy you give to our project shows in moments like these.</p>
-                <a href ="https://rocketprojectucla.wordpress.com/2016/08/31/irec-2016-competition-ucla-wins-innovation-award/">Read More</a>
+				<h4>(The Beginning of Our Liquid Rocket Effort)</h4>
+                <h5>May 10, 2017</h5>
+                <p>This academic year, the Rocket Project at UCLA received a $25,000 grant from Foster and Coco Stanback to enter the FAR/Mars Society Launch Contest to build a liquid bi-propellant fueled rocket that can reach 45,000 feet.
+The FAR/Mars Society Launch Contest will be held at the Friends of Amateur Rocketry (FAR) launch site in Mojave, California on May 5th, 2018. In years past, the Rocket Project worked on hybrid propulsion systems with a very limited budget. This extremely generous grant will allow us to expand our horizons and explore more complex liquid propulsion systems, revamp our tools and appliances in our lab space, and reduce the financial burden on the members of the club. We would like to thank Coco and Foster Stanback for providing us not only with the opportunity to compete in this exciting competition but for providing us the means by which we can enrich our academic experience and give back to our school.</p>
+                <a href ="" class="btn btn-primary btn-md">Read More</a>
             </div>
         </div>
         <!-- /.row -->
-		
+       	<br/><br/><br/>
 		<!-- Calendar -->
 		<div class="row">
             <div class="col-lg-12">
@@ -129,7 +171,6 @@
             </div>
         </div>
 		<!-- /.row -->
-		
 		<!--Sponsors-->
 		<div class="row">
             <div class="col-lg-12">
@@ -138,8 +179,7 @@
             </div>
         </div>
         <!-- /.row -->
-		
-		<!--Social Fields -->
+			<!--Social Fields -->
 		<div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">FOLLOW US</h2>
@@ -158,27 +198,7 @@
                     </li>
 				</ul>
 			</div>
-		</div>
-	    
-	    	<!--Newsletter -->
-		<div class="row">
-            	<div class="col-lg-12">
-		<h2 class="page-header">NEWSLETTER</h2>
-            	</div>
-			<div id="newsletter">
-				<p>Subscribe to our newsletter to receive Rocket Project updates and information about upcoming events.</p>
-			<ul class="list-inline intro-social-buttons">
-                    <li>
-                        <a href="http://rocketprojectatucla.us14.list-manage.com/subscribe?u=6e9588380da030097411befff&id=10a2d2a17a" class="btn btn-success btn-lg"> Subscribe</a>
-                    </li>
-                    <li>
-                        <a href="http://rocketprojectatucla.us14.list-manage.com/unsubscribe?u=6e9588380da030097411befff&id=10a2d2a17a" class="btn btn-danger btn-lg"> Unsubscribe</a>
-                    </li>
-			</ul>
-			</div>
-		</div>
-	    	<!--/.row-->
-        
+		</div>    
     </div>
     <!-- /.container -->
        
@@ -193,7 +213,7 @@
 				·
 				<a href="projects.html">Projects</a>
 				·
-				<a href="https://rocketprojectucla.wordpress.com/">Blog</a>
+				<a href="newsletter.html">Newsletter</a>
 				·
 				<a href="alumni.html">Alumni</a>
 				·
@@ -212,15 +232,15 @@
     <!-- End Footer -->
 
     <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 10000 //changes the speed
     })
     </script>
 	<script>
